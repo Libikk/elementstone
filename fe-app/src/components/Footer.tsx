@@ -1,6 +1,6 @@
 const Footer: React.FC = () => {
     return <footer>
-        Footer
+        Elmstone Systems Ltd.
     </footer>
 }
 

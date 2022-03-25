@@ -20,8 +20,10 @@ const BirdsList: React.FC = () => {
     useEffect(() => {
         getBirds();
     }, [])
-    return <div className="birds-list">
-        {birds ?  birds.map(bird => <Bird bird={bird} />): 'Loading birds!'}
+    return <div className="birds-wrapper">
+        <div className="birds-list">
+            {birds ?  birds.map(bird => <Bird bird={bird} />): 'Loading birds!'}
+        </div>
     </div>
 }
 
