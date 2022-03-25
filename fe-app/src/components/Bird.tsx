@@ -8,7 +8,8 @@ interface Props {
 const Bird: React.FC<Props> = ({ bird }) => {
     return <div>
         <div>{bird.name}</div>
-        <img src={bird.image} alt={bird.name} />
+        <div>{bird.description}</div>
+        <img src={bird.img} alt={bird.name} />
     </div>
 }
 

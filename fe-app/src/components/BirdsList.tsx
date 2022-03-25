@@ -4,7 +4,7 @@ import Bird from "./Bird";
 export interface BirdType {
     name: string
     description: string
-    image: string
+    img: string
 }
 
 const BirdsList: React.FC = () => {
