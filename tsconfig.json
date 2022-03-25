@@ -4,9 +4,8 @@
   "compileOnSave": true,
   "compilerOptions": {
     "outDir": "./build",
-    "rootDirs": ["./src", "./public"],
+    "rootDirs": ["src", "public"],
     "allowJs": true,
-    "esModuleInterop": true,
     "alwaysStrict": true,
     "target": "es2019",
     "module": "commonjs",
@@ -15,5 +14,8 @@
     "resolveJsonModule": true,
     "typeRoots": ["node_modules/@types/"],
     "types": ["node"]
-  }
+  },
+  "paths": {
+    "*": ["*.d.ts"]
+},
 }
