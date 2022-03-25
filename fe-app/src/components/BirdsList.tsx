@@ -21,11 +21,7 @@ const BirdsList: React.FC = () => {
         getBirds();
     }, [])
     return <div className="birds-list">
-        Birds!
-        {
-            birds ?  birds.map(bird => <Bird bird={bird} />): 'Loading birds!'
-        }
-        {birds && JSON.stringify(birds)}
+        {birds ?  birds.map(bird => <Bird bird={bird} />): 'Loading birds!'}
     </div>
 }
 

@@ -6,9 +6,9 @@ interface Props {
 
 
 const Bird: React.FC<Props> = ({ bird }) => {
-    return <div>
-        <div>{bird.name}</div>
-        <div>{bird.description}</div>
+    return <div className='bird'>
+        <div className='bird__name'>{bird.name}</div>
+        <div className='bird__description'>{bird.description}</div>
         <img src={bird.img} alt={bird.name} />
     </div>
 }
