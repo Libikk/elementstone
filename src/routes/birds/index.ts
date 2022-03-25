@@ -1,4 +1,5 @@
 import { Router, Request, Response } from "express";
+import birdsData from '../../../public/data.json';
 
 // todo this could be moved to some helper file
 const sortAlphabetically = (a, b) => {
@@ -12,9 +13,7 @@ const sortAlphabetically = (a, b) => {
 
 const router = Router();
 router.get("/", (req: Request, res: Response) => {
-  const data = require('../../../public/data.json'); // todo import es6
-
-  res.json(data.sort(sortAlphabetically))
+  res.json(birdsData.sort(sortAlphabetically))
 });
 
 export default router;
