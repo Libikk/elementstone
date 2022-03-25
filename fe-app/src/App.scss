@@ -35,6 +35,29 @@ nav {
 
 .birds-list {
   margin-top: 130px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .bird {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+
+    .bird__name {
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .bird__description {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+  }
 }
 
 footer {
