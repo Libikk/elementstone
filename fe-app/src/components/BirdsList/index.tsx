@@ -7,7 +7,7 @@ const BirdsList: React.FC = () => {
 
     const getBirds = async () => {
         const res = await fetch('http://localhost:9090/birds');
-        const data = await res.json();
+        const data:BirdType[] = await res.json();
         setBirds(data);
     }
 
