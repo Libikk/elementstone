@@ -1,6 +1,9 @@
-import { BirdType } from '../BirdsList';
 import style from './Birds.module.scss';
-
+export interface BirdType {
+    name: string
+    description: string
+    img: string
+}
 interface Props {
     bird: BirdType
 }

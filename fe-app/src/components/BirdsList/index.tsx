@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
-import Bird from "../Bird";
+import Bird, { BirdType } from "../Bird";
 import style from './BirdsList.module.scss';
-
-export interface BirdType {
-    name: string
-    description: string
-    img: string
-}
 
 const BirdsList: React.FC = () => {
     const [birds, setBirds] = useState<BirdType[]>([])
