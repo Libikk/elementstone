@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Bird from "./Bird";
+import Bird from "../Bird";
+import style from './BirdsList.module.scss';
 
 export interface BirdType {
     name: string
@@ -19,8 +20,8 @@ const BirdsList: React.FC = () => {
     useEffect(() => {
         getBirds();
     }, [])
-    return <div className="birds-wrapper">
-        <div className="birds-list">
+    return <div className={style.birdsWrapper}>
+        <div className={style.birdsList}>
             {birds ? birds.map(bird => <Bird key={bird.name} bird={bird} />): 'Loading birds!'}
         </div>
     </div>
