@@ -12,7 +12,9 @@ Create a website with Create-React-App in typescript to display the birds as sho
 
 #### Install and run FE/BE
 
-To run BE run `npm i && npm run build && npm run start`
-To run FE run `cd fe-app && npm i && npm run start`
+To run BE `npm i && npm run build && npm run start`
+To run FE `cd fe-app && npm i && npm run start`
+
+To run mocha test `npm run test`
 
 ![alt text](./public/done.png)

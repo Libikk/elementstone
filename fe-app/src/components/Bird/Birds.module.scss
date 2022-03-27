@@ -1,0 +1,30 @@
+@import '../../style/varables';
+
+.bird {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content: left;
+  align-items: center;
+
+  .birdDetails {
+    margin-left: 30px;
+    color: $green-500;
+
+    .birdDetails_name {
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 28px;
+    }
+    .birdDetails_description {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+}
