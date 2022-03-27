@@ -6,23 +6,6 @@ $bgColour: #036c54;
   background-color: #9ec7be;
 }
 
-.header {
-  background-color: $bgColour;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $fontColour;
-
-  .header-text {
-    font-size: 30px;
-    font-weight: medium;
-  }
-}
-
 .birds-wrapper {
   justify-content: center;
   display: flex;
@@ -66,20 +49,4 @@ $bgColour: #036c54;
 
     }
   }
-}
-
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background-color: $bgColour;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 25px;
-  font-stretch: expanded;
-  color: $fontColour;
 }

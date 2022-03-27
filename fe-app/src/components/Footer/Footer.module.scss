@@ -1,0 +1,20 @@
+@import '../../style/varables';
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green-500;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footerText {
+  font-size: 30px;
+  color: $white;
+  opacity: 0.75;
+  font-weight: 100;
+  padding: 10px;
+}

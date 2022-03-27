@@ -1,0 +1,19 @@
+@import '../../style/varables';
+
+.header {
+  background-color: $green-500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.headerText {
+  font-size: 46px;
+  font-weight: 100;
+  margin: 10px 0;
+}

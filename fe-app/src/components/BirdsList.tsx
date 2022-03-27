@@ -11,10 +11,9 @@ const BirdsList: React.FC = () => {
     const [birds, setBirds] = useState<BirdType[]>([])
 
     const getBirds = async () => {
-        fetch('http://localhost:9090/birds')
-            .then(res => res.json())
-            .then(data => setBirds(data))
-            // .then(setBirds)
+        const res = await fetch('http://localhost:9090/birds');
+        const data = await res.json();
+        setBirds(data);
     }
 
     useEffect(() => {
@@ -22,7 +21,7 @@ const BirdsList: React.FC = () => {
     }, [])
     return <div className="birds-wrapper">
         <div className="birds-list">
-            {birds ?  birds.map(bird => <Bird bird={bird} />): 'Loading birds!'}
+            {birds ? birds.map(bird => <Bird key={bird.name} bird={bird} />): 'Loading birds!'}
         </div>
     </div>
 }
